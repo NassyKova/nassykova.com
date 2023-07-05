@@ -1,8 +1,25 @@
 * {
     margin: 0;
+    font-family: "Inter", sans-serif;
+    --blueish: #658bc7;
+    font-size: 14px;
+}
+
+.a {
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+a:visited {
+    color: black;
 }
 .nav {
     height: 70px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .navbar {
@@ -18,8 +35,9 @@
 }
 
 .nav--toggle {
-    justify-content: end;
-    color: red;
+    position: absolute;
+    left: 90%;
+
 }
 
 .nav-menu {
@@ -29,4 +47,47 @@
 
 .nav--socials {
     color: red;
+}
+
+.project {
+    padding: 20px;
+    margin-top: 70px;
+    width: 300px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.project--photo {
+    max-width: 300px;
+    align-self: center;
+    border-radius: 5%;
+}
+
+.project--photo:hover {
+    opacity: 40%;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.project--title {
+    font-size: 20px;
+    align-self: center;
+    margin-bottom: 16px;
+    color: var(--blueish);
+}
+
+.project--websitelink {
+    text-decoration: none;
+}
+
+.project--githublogo {
+    opacity: 50%;
+    float: right;
+}
+
+.project--githublogo:hover {
+    opacity: 95%;
+    transition: 0.3s;
 }
