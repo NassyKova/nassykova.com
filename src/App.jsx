@@ -6,7 +6,7 @@ import "./styles.scss";
 
 function App() {
     const projects = data.map((item) => {
-        return <Project key={item.key} {...item} />;
+        return <Project key={item.id} {...item} />;
     });
 
     return (
