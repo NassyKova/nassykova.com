@@ -1,5 +1,3 @@
-
-
 export default [
     {
         id: 2,
@@ -13,7 +11,7 @@ export default [
         linkDescription: "shkrapp.netlify.app/",
         githubLink: "https://github.com/NassyKova/shkr_frontend",
     },
-    
+
     {
         id: 1,
         coverImg: "Met.png",
@@ -25,7 +23,6 @@ export default [
         link: "https://artworkfromthemet.netlify.app",
         linkDescription: "artworkfromthemet.netlify.app",
         githubLink: "https://github.com/Wade008/hackathon/tree/Nassy",
-
     },
 
     {
@@ -34,7 +31,7 @@ export default [
         title: "noGeography",
         tech: "Python, Flask",
         description:
-            "Bringing the art collection from New York to your screen! The Metropolitan MApp for a tour company. Has ERDs for tours, tours' providers, clients. Lets search, add, delete, update tours, providers and clients",
+            "App for a tour company. Has ERDs for tours, tours' providers, clients. Lets search, add, delete, update tours, providers and clients",
         githubLink: "https://github.com/NassyKova/no_geography",
     },
     {
