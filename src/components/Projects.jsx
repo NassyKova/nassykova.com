@@ -9,7 +9,7 @@ export default function Project(props) {
             </a>
             <section className="project--info">
                 <h1 className="project--title">{props.title}</h1>
-                <section className="project--logos">{props.tech}</section>
+                <section className="project--tech">{props.tech}</section>
                 <p className="project--subtitle">{props.subtitle} </p>
                 <p className="project--p">{props.description}</p>
                 <a
