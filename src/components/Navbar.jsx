@@ -1,4 +1,10 @@
+import SocialIcons from "./socials";
+import socialData from "../socials"
+
 export default function Navbar() {
+    const socials = socialData.map((item) => {
+        return <SocialIcons key={item.key} {...item} />;
+    });
     return (
         <div className="nav">
             <button className="nav--toggle">night mode</button>
@@ -9,7 +15,10 @@ export default function Navbar() {
                     <button>about</button>
                     <button>projects</button>
                 </nav>
-                <div className="nav--socials">Socials 1 2 3</div>
+                <div className="nav--socials">
+                    {socials}
+
+                </div>
             </div>
         </div>
     );

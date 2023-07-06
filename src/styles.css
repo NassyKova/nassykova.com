@@ -4,7 +4,7 @@
     --blueish: #658bc7;
     --link: #9a3b8a;
     --hover: #22ba43;
-    font-size: 14px;;
+    font-size: 14px;
 }
 
 .a {
@@ -47,7 +47,22 @@ a:visited {
 }
 
 .nav--socials {
-    color: red;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.nav--socials--logo {
+    position: relative;
+    width: 40px;
+    margin: 10px;
+    opacity: 0.2;
+}
+.nav--socials--logo:hover {
+    transition: 0.3s;
+    transform: translateY(-3px);
+    opacity: 0.9;
+    filter: drop-shadow(2px 2px grey);
 }
 
 .project {
@@ -55,7 +70,7 @@ a:visited {
     /* align-items: center; */
     justify-content: center;
     padding: 20px;
-    width: 80%;
+    width: 75%;
     margin: auto;
     margin-top: 70px;
     border-radius: 14px;
@@ -75,14 +90,6 @@ a:visited {
 
 .project--logos {
     margin-top: 10px;
-    display: flex;
-    width: 50%;
-
-}
-
-.project--logo{
-    margin-right: 10px;
-    width: 30px;
 }
 
 .project--photo:hover {
@@ -96,7 +103,7 @@ a:visited {
     color: var(--blueish);
 }
 
-.project--subtitle{
+.project--subtitle {
     color: grey;
     margin-top: 10px;
 }
@@ -104,25 +111,24 @@ a:visited {
 .project--p {
     margin-top: 10px;
     font-size: 20px;
-
 }
 .project--websitelink {
     margin-top: 10px;
     font-size: 20px;
-    color: var(--link)
+    color: var(--link);
 }
 
-.project--websitelink:visited{
-    color: var(--link)
+.project--websitelink:visited {
+    color: var(--link);
 }
 
-.project--websitelink:hover{
-    color: var(--hover)
+.project--websitelink:hover {
+    color: var(--hover);
 }
 
 .project--githublogo {
     margin-top: 10px;
-
+    cursor: pointer;
     opacity: 50%;
 }
 
