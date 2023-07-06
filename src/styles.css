@@ -1,9 +1,9 @@
 * {
     margin: 0;
     font-family: "Inter", sans-serif;
-    --blueish: #658bc7;
-    --link: #9a3b8a;
-    --hover: #22ba43;
+    --blueish: #2d6c70;
+    --link: #00403f;
+    --hover: #00bfbc;
     font-size: 14px;
 }
 
@@ -34,6 +34,7 @@ a:visited {
 
 .nav--heading {
     font-size: 50px;
+    color: #133739;
 }
 
 .nav--toggle {
@@ -72,15 +73,25 @@ a:visited {
     padding: 20px;
     width: 75%;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 100px;
     border-radius: 14px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    
+
 }
+
+
 
 .project--photo {
     max-width: 500px;
     border-radius: 14px;
+    &:hover {
+        opacity: 80%;
+        transition: 0.3s;
+    }
 }
+
+
 
 .project--info {
     display: flex;
@@ -90,11 +101,13 @@ a:visited {
 
 .project--logos {
     margin-top: 10px;
-}
 
-.project--photo:hover {
+    }
+
+
+/* .project--photo:hover {
     opacity: 80%;
-    transition: 0.3s;
+    transition: 0.3s; */
 }
 
 .project--title {
@@ -135,4 +148,11 @@ a:visited {
 .project--githublogo:hover {
     opacity: 95%;
     transition: 0.3s;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0.2;
 }

@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Project from "./components/Projects";
 import data from "./projectsData";
-import socialIcons from "./components/socials";
+import Footer from "./components/Footer";
 
 import "./styles.css";
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <>
             <Navbar />
             {projects}
+            <Footer />
         </>
     );
 }

@@ -9,6 +9,7 @@ export default function Navbar() {
         <div className="nav">
             <button className="nav--toggle">night mode</button>
             <div className="navbar">
+                <img src="./img/logos/nk.png"></img>
                 <heading className="nav--heading">Nassy Kova</heading>
                 <div></div>
                 <nav className="nav--menu">
