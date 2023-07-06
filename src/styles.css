@@ -2,7 +2,9 @@
     margin: 0;
     font-family: "Inter", sans-serif;
     --blueish: #658bc7;
-    font-size: 14px;
+    --link: #9a3b8a;
+    --hover: #22ba43;
+    font-size: 14px;;
 }
 
 .a {
@@ -37,7 +39,6 @@ a:visited {
 .nav--toggle {
     position: absolute;
     left: 90%;
-
 }
 
 .nav-menu {
@@ -50,41 +51,79 @@ a:visited {
 }
 
 .project {
-    padding: 20px;
-    margin-top: 70px;
-    width: 300px;
-    flex: 0 0 auto;
     display: flex;
-    flex-direction: column;
-    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 14px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project--photo {
-    max-width: 300px;
-    align-self: center;
-    border-radius: 5%;
+    max-width: 500px;
+    border-radius: 14px;
+}
+
+.project--info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.project--logos {
+    margin-top: 10px;
+    display: flex;
+    width: 50%;
+
+}
+
+.project--logo{
+    margin-right: 10px;
+    width: 30px;
 }
 
 .project--photo:hover {
-    opacity: 40%;
+    opacity: 80%;
     transition: 0.3s;
-    transform: scale(1.1);
 }
 
 .project--title {
-    font-size: 20px;
-    align-self: center;
-    margin-bottom: 16px;
+    font-size: 40px;
+    /* margin-bottom: 16px; */
     color: var(--blueish);
 }
 
+.project--subtitle{
+    color: grey;
+    margin-top: 10px;
+}
+
+.project--p {
+    margin-top: 10px;
+    font-size: 20px;
+
+}
 .project--websitelink {
-    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--link)
+}
+
+.project--websitelink:visited{
+    color: var(--link)
+}
+
+.project--websitelink:hover{
+    color: var(--hover)
 }
 
 .project--githublogo {
+    margin-top: 10px;
+
     opacity: 50%;
-    float: right;
 }
 
 .project--githublogo:hover {

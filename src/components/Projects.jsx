@@ -1,33 +1,35 @@
-export default function Project() {
+import ReactLogo from "/img/logos/React.svg";
+import HTMLLogo from "/img/logos/HTML5.png";
+import CSSLogo from "/img/logos/CSS3.png";
+import JSLogo from "/img/logos/js.png";
+
+export default function Project(props) {
     return (
         <div className="project">
-            <a
-                className="project--websitelink"
-                href="https://artworkfromthemet.netlify.app"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <img
-                    className="project--photo"
-                    src="../img/projects/Met.png"
-                ></img>
-                <h1 className="project--title">
-                    The Metropolitan Museum of Art Collection
-                </h1>
-                <p>Hackathon team project </p>
-                <p>
-                    Bringing the art collection from New York to your screen!
-                    The Metropolitan Museum of Art presents over 5000 years of
-                    art from all around the globe. On this website you can see
-                    available artwork, search for favorite artists or explore
-                    new ones, add an artwork to your personal favorite page.
-                    <p className="bold">Javascript, React, Third Party API </p>
-                </p>
-            </a>
-            <section>
-                {" "}
+            <img
+                className="project--photo"
+                src={`../img/projects/${props.coverImg}`}
+            ></img>
+            <section className="project--info">
+                <h1 className="project--title">{props.title}</h1>
+                <section className="project--logos">
+                    <img className="project--logo" src={JSLogo}></img>
+                    <img className="project--logo" src={ReactLogo}></img>
+                    <img className="project--logo" src={CSSLogo}></img>
+                    <img className="project--logo" src={HTMLLogo}></img>
+                </section>
+                <p className="project--subtitle">{props.subtitle} </p>
+                <p className="project--p">{props.description}</p>
                 <a
-                    href="https://github.com/Wade008/hackathon/tree/Nassy"
+                    className="project--websitelink"
+                    href={props.link}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    {props.linkDescription}
+                </a>{" "}
+                <a
+                    href={props.githublink}
                     target="_blank"
                     rel="noreferrer"
                 >
