@@ -13,6 +13,7 @@
     display: flex;
     position: relative;
     margin-bottom: 40px;
+
     @media screen and (max-width: 600px) {
         margin-bottom: 10px;
     }
@@ -56,14 +57,35 @@
 
     @media screen and (max-width: 600px) {
         width: 50px;
-
     }
 }
 
 .nav--menu {
-    display: none;
-    align-self: flex-start;
-    /* display: block; */
+
+}
+
+.nav--button {
+
+    cursor: pointer;
+    border: none;
+    outline:none;
+    font-size: 20px;
+
+
+    &:active {
+        color: grey
+    }
+
+    &:focus{
+        color: grey
+    }
+    &:hover {
+        color: var(--hover);
+        border-radius:10px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
 }
 
 .nav--socials {
@@ -73,7 +95,6 @@
 
     @media screen and (max-width: 600px) {
         width: 40px;
-
     }
 }
 
@@ -88,9 +109,10 @@
         transform: translateY(-3px);
         opacity: 0.9;
     }
+
     @media screen and (max-width: 600px) {
-        width:15px;
-        margin: 5px;
+        width: 15px;
+        margin: 3px;
     }
 }
 
@@ -142,14 +164,16 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+
     @media screen and (max-width: 600px) {
         padding: 10px;
     }
-    
+
 }
 
 .project--tech {
     margin-top: 10px;
+
     @media screen and (max-width: 600px) {
         font-size: 10px;
     }
@@ -217,6 +241,48 @@
     }
 }
 
+.about {
+    margin: 3vw 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about--text {
+    margin: 2em 5em;
+    font-size: 20px;
+
+    a:link {
+        color: var(--link);
+    }
+
+    a:visited {
+        color: var(--link);
+    }
+
+    a:hover {
+        color: var(--hover);
+    }
+
+    @media screen and (max-width: 600px) {
+    padding: 2px;
+    margin: 0;
+    }
+
+}
+
+.about--photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 1vw;
+
+    &:hover {
+        opacity: 40%;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+}
 
 .footer {
     display: flex;
